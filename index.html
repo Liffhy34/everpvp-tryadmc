@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="scroll.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        <meta charset="utf-8">
+        <title>EverPvP | Portale</title>
+    </head>
+    <body>
+        <header>
+            <div class="navbar">
+                <ul>
+                    <li><a href="#">Donazioni</a></li>
+                    <li><a href="#">Contattaci</a></li>
+                </ul>
+            </div>
+            <div class="wrapper">
+                <div class="content">
+                    <h3>Benvenuto sul portale Ufficiale di <font style="color:rgb(161, 59, 33)">Ever</font>PvP!</h3>
+                    <small><p>Hey, tu benvenuto sul portale ufficiale di EverPvP! Qua puoi trovare tutti i nostri redirects <br> <font style="color:rgb(179, 112, 96);font-weight:bold;">TeamSpeak</font> , <font style="color:rgb(181, 104, 201);font-weight:bold">Discord</font> , e molto altro <br> Ricordati di entrare sul nostro server MC </p></small>
+                    <br>
+                    <span id="span">mc.everpvp.eu</span>
+                    <br>
+                    <br>
+                    <a href="#"><i class="fas fa-book"></i></a>
+                    <a href="https://t.me/EverPvPOfficial"><i class="fab fa-telegram"></i></a>
+                    <a href="ts3server://ts.everpvp.eu"><i class="fab fa-teamspeak"></i></a>
+                    <a href=""><i class="fas fa-comments"></i></a>
+                    <p id="cliccami">Cliccami!</p>
+                </div>
+            </div>
+        </header>
+        <footer>
+            <p>Copyright © 2020 EverPvP – All rights reserved.</p>
+            <p>
+                <a href="#">TeamSpeak</a>
+                <a href="#">Discord</a>
+                <a href="#">Telegram</a>
+                <a href="#">Contattaci</a>
+                <a href="#">Email</a>
+            </p>
+            <small>Developed with ❤️ by Liffhy32</small>
+            <script>
+                const span = document.querySelector("span");
+
+                        span.onclick = function() {
+                        document.execCommand("copy");
+                        alert("Hai copiato l'ip del server!");
+                        }
+
+                        span.addEventListener("copy", function(event) {
+                        event.preventDefault();
+                        if (event.clipboardData) {
+                            event.clipboardData.setData("text/plain", span.textContent);
+                            console.log(event.clipboardData.getData("text"))
+                        }
+                        });
+            </script>
+        </footer>
+    </body>
+</html>
